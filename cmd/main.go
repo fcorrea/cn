@@ -147,6 +147,7 @@ func init() {
 		cliKubeNano(),
 		cliUpdateCheckNano(),
 		cmdFlavors,
+		cmdImages,
 	)
 	rootCmd.SetHelpCommand(&cobra.Command{
 		Use:    "no-help",
