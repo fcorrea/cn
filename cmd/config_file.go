@@ -177,10 +177,7 @@ func getImageNameFromConfig(entry string) string {
 }
 
 func isEntryExists(group string, item string) bool {
-	if viper.Get(group+"."+item) != nil {
-		return true
-	}
-	return false
+	return viper.IsSet(group + "." + item)
 }
 
 // Return items from a given group
